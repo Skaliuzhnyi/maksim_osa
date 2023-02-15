@@ -2,6 +2,7 @@ $(document).on("scroll", function () {
   if ($(document).scrollTop() > 0) {
     $(".header, .header__inner").addClass("fixed");
     $(".header__nav").addClass("hiden");
+    $('.header__nav').removeClass('active');
   } else {
     $(".header, .header__inner").removeClass("fixed");
     $(".header__nav").removeClass("hiden");
@@ -11,12 +12,13 @@ $(document).on("scroll", function () {
 $('.burger').on('click', function () {
   $('.header').toggleClass('active');
   $('body').toggleClass('lock');
-  (".header__nav").toggleClass("hiden");
 });
-$('.header__nav-link, .social__link').on('click', function () {
-  $('.header').toggleClass('active');
-  $('body').toggleClass('lock');
-  (".header__nav").toggleClass("hiden");
+
+
+$('.header__nav-link, .social__link, .header__menu-inner').on('click', function () {
+  $('.header').removeClass('active');
+  $('.header__nav').removeClass('active');
+  $('body').removeClass('lock');
 });
 
 function subMenuToShow() {
@@ -52,13 +54,17 @@ function subMenuToShow() {
       const isOpened = currentParent.classList.contains(openedClass);
       const coppyBtn = target.closest('button');
 
+          
 
       if (coppyBtn && isOpened) {
-        console.log('coppy');
         return
       } else {
         if (!isOpened) {
-
+          for (let item of document.querySelectorAll('.transfer__item-has-children')) {
+            if (item.classList.contains(openedClass))
+            item.classList.remove(openedClass);
+            $(item).children('.transfer__item-content').slideUp(500);
+          }
           $(currentParent).children('.transfer__item-content').slideDown(500);
           currentParent.classList.add(openedClass);
         } else {
@@ -105,83 +111,14 @@ for (let elm of elements) {
 
 //////////////////////////////////////////////////////////////////
 
-/*   function initStick() {
-    const stickParent = document.querySelector('.stick');
-    $(stickParent).stick_in_parent();
-  }
-
-var block_show = null;
-
-function scrollTracking() {
-  var wt = $(window).scrollTop();
-  var wh = $(window).height();
-  var et = $('.stick').offset().top;
-  var eh = $('.stick').outerHeight();
-
-  if (wt + wh * 2 >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
-    if (block_show == null || block_show == false) {
-      initStick();
-      document.querySelector('.stick').classList.add('active');
-      console.log(document.querySelector('.stick'));
-      console.log(et);
-    }
-    block_show = true;
-  } else {
-    if (block_show == null || block_show == true) {
-      document.querySelector('.stick').classList.remove('active');
-      document.querySelector('.stick').style.position = 'absolute';
-      console.log(document.querySelector('.stick'));
-      
-    }
-    block_show = false;
-  }
-}
-
-if ($(window).width() > 1366) {
-  $(window).scroll(function () {
-    scrollTracking();
-  });
-} */
-
-/* var block_show = null;
-
-function scrollTracking() {
-  var wt = $(window).scrollTop();
-  var wh = $(window).height();
-  var et = $('.stick').offset().top;
-  var eh = $('.stick').outerHeight();
-
-  if (wt + wh * 2 >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
-    if (block_show == null || block_show == false) {
-      document.querySelector('.stick').classList.add('active');
-      console.log(document.querySelector('.stick'));
-      console.log(et);
-    }
-    block_show = true;
-  } else {
-    if (block_show == null || block_show == true) {
-      document.querySelector('.stick').classList.remove('active');
-      console.log(document.querySelector('.stick'));
-
-    }
-    block_show = false;
-  }
-}
-
-
-$(window).scroll(function () {
-  scrollTracking();
-}); */
 
 function initStickInit() {
-  function initStick() {
-    const stickParent = document.querySelectorAll('.stick');
-    $(stickParent).stick_in_parent();
+  if ($(window).width() > 1260) {
+    var sticky = UIkit.sticky('.stick', {
+      offset: 100,
+      end: true
+    });
   }
-
-  if ($(window).width() > 1366) {
-    initStick();
-  } else {}
 }
 
 initStickInit();

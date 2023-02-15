@@ -25,7 +25,7 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a class="header__logo" href="#index.html">
+      <a class="header__logo" href="#top">
         <img class="logo" src="img/logo.svg" alt="логотип">
       </a>
       <button class="burger">
@@ -33,6 +33,7 @@
       </button>
     </div>
 
+    <div class="header__menu-inner"></div>
     <div class="header__menu">
       <nav class="header__nav">
         <ul class="header__nav-list">
@@ -80,6 +81,7 @@
           </a>
         </li>
       </ul>
+
     </div>
   </div>
 </header>
@@ -89,9 +91,9 @@
   
   <section id="top" class="section first__screen section__bg-dark">
   
-    <video class="first__screen-bg first__screen-bg--phone" src="img/first__screen-bg__video.mov" autoplay muted loop>
+    <video class="first__screen-bg first__screen-bg--phone" src="img/first__screen-bg__video.mp4" type="video/mp4" autoplay muted loop preload="auto">
     </video>
-    <video class="first__screen-bg first__screen-bg--tablet" src="img/first__screen-bg__video.mov" autoplay muted loop>
+    <video class="first__screen-bg first__screen-bg--tablet" src="img/first__screen-bg__video.mp4" type="video/mp4" autoplay muted loop preload="auto">
     </video>
 
     <img class="first__screen-img" src="img/page__logo.svg" width="259" height="79" alt="логотип">
@@ -103,16 +105,18 @@
       Історичний детектив «Максим Оса: золото Песиголовця»
     </h1>
 
-    <figure class="plt-block-youtube stick">
-      <img src="img/maksym-osa-trailer.jpg" alt="треллер на youtube">
-      <div class="plt-block-youtube-feature">
-        <a href="#" data-fancybox="video-gallery">Трейлер</a>
-        <div>
-          <span>IMDB 6.8</span>
-          <span>12+</span>
+    <div class="stick position__right">
+      <figure class="plt-block-youtube">
+        <img src="img/maksym-osa-trailer.jpg" alt="треллер на youtube">
+        <div class="plt-block-youtube-feature">
+          <a href="#" data-fancybox="video-gallery">Трейлер</a>
+          <div>
+            <span>IMDB 6.6</span>
+            <span>12+</span>
+          </div>
         </div>
-      </div>
-    </figure>
+      </figure>
+    </div>
 
     <div class="about__text content position__right">
       <p>
@@ -206,41 +210,43 @@
       </ul>
     </div>
 
-    <figure class="plt-block-youtube position__right stick">
-      <img src="img/drone__video.jpg" alt="треллер на youtube">
-      <div class="plt-block-youtube-feature">
-        <a href="#" data-fancybox="video-gallery">Трейлер</a>
-      </div>
-    </figure>
-
-    <div class="content position__right position__right--left">
-      <div class="drone__text">
-        <p>
-          Перші дрони ОСА вже створені і успішно виконують бойові задачі. Це штурмові, наступальні дрони, які безжально
-          нищать ворога, захищаючи українську землю та зберігаючи життя українських воїнів та кожного з нас.
-        </p>
-        <p>
-          І кожний з Вас може долучитись до нашої спільної боротьби. Виготовлення 1 дрона коштує близько
-          100 000 гривень, і кожний з Вас, долучившись своїм внеском, збільшує цей рій. ОСА жалить влучно.
-        </p>
-        <p>
-          Заздалегідь вдячні кожному, хто доєднається до нашої спільної справи, щоб після нашої перемоги знов
-          зустрічатись
-          на прем’єрах нових українських фільмів.<br>
-          Слава Україні!
-        </p>
-      </div>
-
-      <h3 class="drone__subtitle subtitle animation-prepare">Напрямки використання високо пілотажний FPV коптер "ОСА"
-      </h3>
-
-      <ul class="drone__directions-list">
-        <li class="drone__directions-item drone__directions-item--execution">Виконання розвідувальних задач</li>
-        <li class="drone__directions-item drone__directions-item--support">Підтримка штурмових дій</li>
-        <li class="drone__directions-item drone__directions-item--shock">Ударний дрон з скидом</li>
-        <li class="drone__directions-item drone__directions-item--kamikadze">Дрон камікадзе</li>
-      </ul>
+    <div class="stick position__right">
+      <figure class="plt-block-youtube">
+        <img src="img/drone__video.jpg" alt="треллер на youtube">
+        <div class="plt-block-youtube-feature">
+          <a href="#" data-fancybox="video-gallery">Трейлер</a>
+        </div>
+      </figure>
     </div>
+  
+      <div class="content position__right position__right--left">
+        <div class="drone__text">
+          <p>
+            Перші дрони ОСА вже створені і успішно виконують бойові задачі. Це штурмові, наступальні дрони, які безжально
+            нищать ворога, захищаючи українську землю та зберігаючи життя українських воїнів та кожного з нас.
+          </p>
+          <p>
+            І кожний з Вас може долучитись до нашої спільної боротьби. Виготовлення 1 дрона коштує близько
+            100 000 гривень, і кожний з Вас, долучившись своїм внеском, збільшує цей рій. ОСА жалить влучно.
+          </p>
+          <p>
+            Заздалегідь вдячні кожному, хто доєднається до нашої спільної справи, щоб після нашої перемоги знов
+            зустрічатись
+            на прем’єрах нових українських фільмів.<br>
+            Слава Україні!
+          </p>
+        </div>
+  
+        <h3 class="drone__subtitle subtitle animation-prepare">Напрямки використання високо пілотажний FPV коптер "ОСА"
+        </h3>
+  
+        <ul class="drone__directions-list">
+          <li class="drone__directions-item drone__directions-item--execution">Виконання розвідувальних задач</li>
+          <li class="drone__directions-item drone__directions-item--support">Підтримка штурмових дій</li>
+          <li class="drone__directions-item drone__directions-item--shock">Ударний дрон з скидом</li>
+          <li class="drone__directions-item drone__directions-item--kamikadze">Дрон камікадзе</li>
+        </ul>
+      </div>
   </div>
 
   <div class="container container__help-form">
@@ -320,7 +326,7 @@
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
-                <span>IBAN UA963253650000000260040038189</span>
+                <span class="iban">IBAN UA963253650000000260040038189</span>
               </div>
             </div>
           </li>
@@ -343,7 +349,7 @@
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
-                <span>IBAN UA963253650000000260040038189</span>
+                <span class="iban">IBAN UA963253650000000260040038189</span>
               </div>
             </div>
           </li>
@@ -366,7 +372,7 @@
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
-                <span>IBAN UA963253650000000260040038189</span>
+                <span class="iban">IBAN UA963253650000000260040038189</span>
               </div>
             </div>
           </li>
@@ -389,7 +395,7 @@
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
-                <span>IBAN UA963253650000000260040038189</span>
+                <span class="iban">IBAN UA963253650000000260040038189</span>
               </div>
             </div>
           </li>
@@ -412,7 +418,7 @@
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
-                <span>IBAN UA963253650000000260040038189</span>
+                <span class="iban">IBAN UA963253650000000260040038189</span>
               </div>
             </div>
           </li>
@@ -494,40 +500,40 @@
         <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
       </li>
       <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
+        <img class="our-partners__item-img" src="img/icons/partners/silpo.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/np.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/ks.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/silpo.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/socar.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/silpo.svg" alt="наш партнер">
       </li>
       <li class="our-partners__item">
         <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
       </li>
       <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
+        <img class="our-partners__item-img" src="img/icons/partners/ks.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/np.svg" alt="наш партнер">
+      </li>
+      <li class="our-partners__item">
+        <img class="our-partners__item-img" src="img/icons/partners/film.svg" alt="наш партнер">
       </li>
       <li class="our-partners__item">
         <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
       </li>
       <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
-      </li>
-      <li class="our-partners__item">
-        <img class="our-partners__item-img" src="img/icons/partners/partner.svg" alt="наш партнер">
+        <img class="our-partners__item-img" src="img/icons/partners/np.svg" alt="наш партнер">
       </li>
     </ul>
   </div>
@@ -652,9 +658,12 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"
-    integrity="sha512-MAhdSIQcK5z9i33WN0KzveJUhM2852CJ1lJp4o60cXhQT20Y3friVRdeZ5TEWz4Pi+nvaQqnIqWJJw4HVTKg1Q=="
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.24/js/uikit.min.js"
+    integrity="sha512-hSlNacqEG9zgxcDD+YB6Ezc/1ldZ/Jn2m+Iy6wGmEHZJWLWnmiqq2dKoEfRePT8jr791mPGIrfpqqQ7bjhCDRg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
     integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
     integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -96,7 +97,7 @@
     <video class="first__screen-bg first__screen-bg--tablet" src="img/first__screen-bg__video.mp4" type="video/mp4" autoplay muted loop preload="auto">
     </video>
 
-    <img class="first__screen-img" src="img/page__logo.svg" width="259" height="79" alt="логотип">
+    <img class="first__screen-img" src="img/page__logo.png" width="259" height="79" alt="логотип">
 </section>
 
   <section id="about" class="section about section__bg-dark">
@@ -105,67 +106,83 @@
       Історичний детектив «Максим Оса: золото Песиголовця»
     </h1>
 
-    <div class="stick position__right">
-      <figure class="plt-block-youtube">
-        <img src="img/maksym-osa-trailer.jpg" alt="треллер на youtube">
-        <div class="plt-block-youtube-feature">
-          <a href="#" data-fancybox="video-gallery">Трейлер</a>
-          <div>
-            <span>IMDB 6.6</span>
-            <span>12+</span>
-          </div>
-        </div>
-      </figure>
-    </div>
-
-    <div class="about__text content position__right">
-      <p>
-        Історичний детектив «Максим Оса: золото Песиголовця» знято за мотивами однойменного графічного роману, який
-        вперше був надрукований у 2008-2009 роках французькою мовою. Автор твору – Ігор Баранько, український,
-        французький та американський коміксист. Починаючи з 2012 року планувалося екранізувати цей твір. Проект
-        неодноразово брав участь у пітчингах Держкіно задля отримання фінансування. Попри перемогу у одному з відборів,
-        процес затягувався. Знімати почали наприкінці 2019 року у лісах на Київщині, а також у Кам’янець-Подільському
-        замку.
-      </p>
-      <p>
-        Проект неодноразово брав участь у пітчингах Держкіно задля отримання фінансування. Попри перемогу у одному з
-        відборів, процес затягувався. Знімати почали наприкінці 2019 року у лісах на Київщині, а також у
-        Кам’янець-Подільському замку.
-      </p>
-    </div>
-
-    <div class="about__icons content position__right">
-      <div class="about__icons-item">
-        <img class="about__icons-hanzhonkov" src="img/hanzhonkov.svg" alt="">
+    
+    <div class="stick__container">
+      
+      <div class="stick position__right">
+        <figure class="plt-block-youtube">
+          <a class="plt-block-youtube__link" href="https://youtu.be/xfgBijPAR6s" data-fancybox="video-gallery">
+            <div class="plt-block-youtube__img">
+              <img src="img/maksym-osa-trailer.jpg" alt="треллер на youtube" />
+            </div>
+            <div class="plt-block-youtube-feature">
+              <div class="plt-block-youtube-feature__link">Трейлер</div>
+              <div>
+                <span>IMDB 6.6</span>
+                <span>12+</span>
+              </div>
+            </div>
+          </a>
+        </figure>
       </div>
-      <div class="about__icons-item">
-        <img class="about__icons-state" src="img/state.svg" alt="">
+
+      <div class="about__text content position__right">
+        <p>
+          Історичний детектив «Максим Оса: золото Песиголовця» знято за мотивами
+          однойменного графічного роману, який вперше був надрукований у
+          2008-2009 роках французькою мовою. Автор твору – Ігор Баранько,
+          український, французький та американський коміксист. Починаючи з 2012
+          року планувалося екранізувати цей твір. Проект неодноразово брав
+          участь у пітчингах Держкіно задля отримання фінансування. Попри
+          перемогу у одному з відборів, процес затягувався. Знімати почали
+          наприкінці 2019 року у лісах на Київщині, а також у
+          Кам’янець-Подільському замку.
+        </p>
+        <p>
+          Проект неодноразово брав участь у пітчингах Держкіно задля отримання
+          фінансування. Попри перемогу у одному з відборів, процес затягувався.
+          Знімати почали наприкінці 2019 року у лісах на Київщині, а також у
+          Кам’янець-Подільському замку.
+        </p>
+      </div>
+
+      <div class="about__icons content position__right">
+        <div class="about__icons-item">
+          <img
+            class="about__icons-hanzhonkov"
+            src="img/hanzhonkov.svg"
+            alt=""
+          />
+        </div>
+        <div class="about__icons-item">
+          <img class="about__icons-state" src="img/state.svg" alt="" />
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+
   <span class="line"></span>
 
   <section id="drone" class="section drone section__bg-light">
   <div class="container">
-
     <div class="drone__top">
       <h2 class="drone__title animation-prepare">Допомога на дрон ОСА</h2>
 
       <div class="drone__text content position__right">
         <p>
-          Українці – творчі люди, і ми б хотіли продовжувати писати фантастичні сценарії та музику, вигадувати
-          персонажів
-          та знімати фільми, але прийшла повномасштабна війна. Частина команди фільму мобілізувалась до лав ЗСУ і щодня
-          наближає перемогу. Зважаючи, що сили зла численні, українці можуть перемогти ворога тільки з перевагою розуму
-          та
+          Українці – творчі люди, і ми б хотіли продовжувати писати фантастичні
+          сценарії та музику, вигадувати персонажів та знімати фільми, але
+          прийшла повномасштабна війна. Частина команди фільму мобілізувалась до
+          лав ЗСУ і щодня наближає перемогу. Зважаючи, що сили зла численні,
+          українці можуть перемогти ворога тільки з перевагою розуму та
           інтелекту.
         </p>
         <p>
-          Так частиною команди, яка працювала над фільмом, був створений і активно розробляється дрон ОСА – модель
-          бойових
-          дронів, які жалять та знищують ворога з майстерністю та завзятістю Максима Оси.
+          Так частиною команди, яка працювала над фільмом, був створений і
+          активно розробляється дрон ОСА – модель бойових дронів, які жалять та
+          знищують ворога з майстерністю та завзятістю Максима Оси.
         </p>
       </div>
     </div>
@@ -173,137 +190,190 @@
     <div class="gallery">
       <ul class="gallery__list">
         <li class="gallery__item gallery__item--vertical">
-          <a class="gallery__item-link" href="img/gallery3.jpg" data-fancybox="gallery">
-            <img src="img/gallery3.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery3.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery3.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item">
-          <a class="gallery__item-link" href="img/gallery2.jpg" data-fancybox="gallery">
-            <img src="img/gallery2.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery2.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery2.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item">
-          <a class="gallery__item-link" href="img/gallery1.jpg" data-fancybox="gallery">
-            <img src="img/gallery1.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery1.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery1.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item">
-          <a class="gallery__item-link" href="img/gallery2.jpg" data-fancybox="gallery">
-            <img src="img/gallery2.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery2.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery2.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item gallery__item--vertical">
-          <a class="gallery__item-link" href="img/gallery3.jpg" data-fancybox="gallery">
-            <img src="img/gallery3.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery3.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery3.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item">
-          <a class="gallery__item-link" href="img/gallery1.jpg" data-fancybox="gallery">
-            <img src="img/gallery1.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery1.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery1.jpg" alt="" />
           </a>
         </li>
         <li class="gallery__item">
-          <a class="gallery__item-link" href="img/gallery2.jpg" data-fancybox="gallery">
-            <img src="img/gallery2.jpg" alt="">
+          <a
+            class="gallery__item-link"
+            href="img/gallery2.jpg"
+            data-fancybox="gallery"
+          >
+            <img src="img/gallery2.jpg" alt="" />
           </a>
         </li>
       </ul>
     </div>
 
-    <div class="stick position__right">
-      <figure class="plt-block-youtube">
-        <img src="img/drone__video.jpg" alt="треллер на youtube">
-        <div class="plt-block-youtube-feature">
-          <a href="#" data-fancybox="video-gallery">Трейлер</a>
-        </div>
-      </figure>
-    </div>
-  
+    <div class="stick__container">
+      
+      <div class="stick position__right">
+        <figure class="plt-block-youtube">
+          <a class="plt-block-youtube__link" href="img/first__screen-bg__video.mp4" data-fancybox="video-gallery">
+            <div class="plt-block-youtube__img">
+              <img src="img/drone__video.jpg" alt="треллер на youtube" />
+            </div>
+            <div class="plt-block-youtube-feature">
+              <div class="plt-block-youtube-feature__link">Трейлер</div>
+            </div>
+          </a>
+        </figure>
+      </div>
+
       <div class="content position__right position__right--left">
         <div class="drone__text">
           <p>
-            Перші дрони ОСА вже створені і успішно виконують бойові задачі. Це штурмові, наступальні дрони, які безжально
-            нищать ворога, захищаючи українську землю та зберігаючи життя українських воїнів та кожного з нас.
+            Перші дрони ОСА вже створені і успішно виконують бойові задачі. Це
+            штурмові, наступальні дрони, які безжально нищать ворога, захищаючи
+            українську землю та зберігаючи життя українських воїнів та кожного з
+            нас.
           </p>
           <p>
-            І кожний з Вас може долучитись до нашої спільної боротьби. Виготовлення 1 дрона коштує близько
-            100 000 гривень, і кожний з Вас, долучившись своїм внеском, збільшує цей рій. ОСА жалить влучно.
+            І кожний з Вас може долучитись до нашої спільної боротьби.
+            Виготовлення 1 дрона коштує близько 100 000 гривень, і кожний з Вас,
+            долучившись своїм внеском, збільшує цей рій. ОСА жалить влучно.
           </p>
           <p>
-            Заздалегідь вдячні кожному, хто доєднається до нашої спільної справи, щоб після нашої перемоги знов
-            зустрічатись
-            на прем’єрах нових українських фільмів.<br>
+            Заздалегідь вдячні кожному, хто доєднається до нашої спільної
+            справи, щоб після нашої перемоги знов зустрічатись на прем’єрах
+            нових українських фільмів.<br />
             Слава Україні!
           </p>
         </div>
-  
-        <h3 class="drone__subtitle subtitle animation-prepare">Напрямки використання високо пілотажний FPV коптер "ОСА"
+      </div>
+
+      <div class="content position__right position__right--left">
+        <h3 class="drone__subtitle subtitle animation-prepare">
+          Напрямки використання високо пілотажний FPV коптер "ОСА"
         </h3>
-  
+
         <ul class="drone__directions-list">
-          <li class="drone__directions-item drone__directions-item--execution">Виконання розвідувальних задач</li>
-          <li class="drone__directions-item drone__directions-item--support">Підтримка штурмових дій</li>
-          <li class="drone__directions-item drone__directions-item--shock">Ударний дрон з скидом</li>
-          <li class="drone__directions-item drone__directions-item--kamikadze">Дрон камікадзе</li>
+          <li class="drone__directions-item drone__directions-item--execution">
+            Виконання розвідувальних задач
+          </li>
+          <li class="drone__directions-item drone__directions-item--support">
+            Підтримка штурмових дій
+          </li>
+          <li class="drone__directions-item drone__directions-item--shock">
+            Ударний дрон з скидом
+          </li>
+          <li class="drone__directions-item drone__directions-item--kamikadze">
+            Дрон камікадзе
+          </li>
         </ul>
       </div>
+    </div>
   </div>
 
   <div class="container container__help-form">
     <div class="help-form">
-
-      <h2 class="help-form__title section__title">Допомога для виготовлення дронів
-        здійснюється через Благдійний Фонд "Віра".</h2>
+      <h2 class="help-form__title section__title">
+        Допомога для виготовлення дронів здійснюється через Благдійний Фонд
+        "Віра".
+      </h2>
 
       <div class="help-form__inner">
-
         <form class="form section__bg-light">
-
           <h3>Допомогти зараз</h3>
 
           <div class="form__fild form__fild--radio">
             <label class="radio__container">
-              <input class="radio" type="radio" name="level" required>
+              <input class="radio" type="radio" name="level" required />
               <span class="radio__box"></span>
               <span class="radio__text">50 грн</span>
             </label>
 
             <label class="radio__container">
-              <input checked class="radio" type="radio" name="level" required>
+              <input checked class="radio" type="radio" name="level" required />
               <span class="radio__box"></span>
               <span class="radio__text">500 грн</span>
             </label>
 
             <label class="radio__container">
-              <input class="radio" type="radio" name="level" required>
+              <input class="radio" type="radio" name="level" required />
               <span class="radio__box"></span>
               <span class="radio__text">200 грн</span>
             </label>
 
             <label class="radio__container">
-              <input checked class="radio" type="radio" name="level" required>
+              <input checked class="radio" type="radio" name="level" required />
               <span class="radio__box"></span>
               <span class="radio__text">Інше</span>
             </label>
           </div>
 
           <div class="form__fild form__fild--text">
-            <input class="text" type="text" placeholder="Введіть суму" required>
+            <input
+              class="text"
+              type="text"
+              placeholder="Введіть суму"
+              required
+            />
           </div>
 
           <div class="form__fild form__fild--checkbox">
             <label class="checkbox">
-              <input class="checkbox__input" type="checkbox" required>
+              <input class="checkbox__input" type="checkbox" required />
               <span class="checkbox__box"></span>
               <div class="checkbox__text">
-                Я погоджуюсь, що моє пожервування є безповоротнім і буде використані на розсуд
-                фонду в межах діяльності описаної в статуті.
+                Я погоджуюсь, що моє пожервування є безповоротнім і буде
+                використані на розсуд фонду в межах діяльності описаної в
+                статуті.
               </div>
             </label>
           </div>
 
           <button class="btn" type="submit" required>Допомогти</button>
-
         </form>
 
         <ul class="transfer__list">
@@ -313,16 +383,17 @@
             </div>
             <div class="transfer__item-content">
               <p>
-                Intermediary (Банк-посередник)<br>
-                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br> POLAND<br>
-                SWIFT: BPKOPLPW<br>
-                Beneficiary’s bank (Банк-одержувача)<br>
-                JSC KREDOBANK Lviv, Ukraine<br>
-                SWIFT:WUCBUA2X<br>
-                Beneficiary (Одержувач)<br>
-                Name<br>
-                CO "ICF "TOGETHER UA"<br>
-                Призначення платежу<br>
+                Intermediary (Банк-посередник)<br />
+                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br />
+                POLAND<br />
+                SWIFT: BPKOPLPW<br />
+                Beneficiary’s bank (Банк-одержувача)<br />
+                JSC KREDOBANK Lviv, Ukraine<br />
+                SWIFT:WUCBUA2X<br />
+                Beneficiary (Одержувач)<br />
+                Name<br />
+                CO "ICF "TOGETHER UA"<br />
+                Призначення платежу<br />
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
@@ -336,16 +407,17 @@
             </div>
             <div class="transfer__item-content">
               <p>
-                Intermediary (Банк-посередник)<br>
-                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br> POLAND<br>
-                SWIFT: BPKOPLPW<br>
-                Beneficiary’s bank (Банк-одержувача)<br>
-                JSC KREDOBANK Lviv, Ukraine<br>
-                SWIFT:WUCBUA2X<br>
-                Beneficiary (Одержувач)<br>
-                Name<br>
-                CO "ICF "TOGETHER UA"<br>
-                Призначення платежу<br>
+                Intermediary (Банк-посередник)<br />
+                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br />
+                POLAND<br />
+                SWIFT: BPKOPLPW<br />
+                Beneficiary’s bank (Банк-одержувача)<br />
+                JSC KREDOBANK Lviv, Ukraine<br />
+                SWIFT:WUCBUA2X<br />
+                Beneficiary (Одержувач)<br />
+                Name<br />
+                CO "ICF "TOGETHER UA"<br />
+                Призначення платежу<br />
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
@@ -359,16 +431,17 @@
             </div>
             <div class="transfer__item-content">
               <p>
-                Intermediary (Банк-посередник)<br>
-                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br> POLAND<br>
-                SWIFT: BPKOPLPW<br>
-                Beneficiary’s bank (Банк-одержувача)<br>
-                JSC KREDOBANK Lviv, Ukraine<br>
-                SWIFT:WUCBUA2X<br>
-                Beneficiary (Одержувач)<br>
-                Name<br>
-                CO "ICF "TOGETHER UA"<br>
-                Призначення платежу<br>
+                Intermediary (Банк-посередник)<br />
+                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br />
+                POLAND<br />
+                SWIFT: BPKOPLPW<br />
+                Beneficiary’s bank (Банк-одержувача)<br />
+                JSC KREDOBANK Lviv, Ukraine<br />
+                SWIFT:WUCBUA2X<br />
+                Beneficiary (Одержувач)<br />
+                Name<br />
+                CO "ICF "TOGETHER UA"<br />
+                Призначення платежу<br />
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
@@ -382,16 +455,17 @@
             </div>
             <div class="transfer__item-content">
               <p>
-                Intermediary (Банк-посередник)<br>
-                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br> POLAND<br>
-                SWIFT: BPKOPLPW<br>
-                Beneficiary’s bank (Банк-одержувача)<br>
-                JSC KREDOBANK Lviv, Ukraine<br>
-                SWIFT:WUCBUA2X<br>
-                Beneficiary (Одержувач)<br>
-                Name<br>
-                CO "ICF "TOGETHER UA"<br>
-                Призначення платежу<br>
+                Intermediary (Банк-посередник)<br />
+                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br />
+                POLAND<br />
+                SWIFT: BPKOPLPW<br />
+                Beneficiary’s bank (Банк-одержувача)<br />
+                JSC KREDOBANK Lviv, Ukraine<br />
+                SWIFT:WUCBUA2X<br />
+                Beneficiary (Одержувач)<br />
+                Name<br />
+                CO "ICF "TOGETHER UA"<br />
+                Призначення платежу<br />
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
@@ -405,16 +479,17 @@
             </div>
             <div class="transfer__item-content">
               <p>
-                Intermediary (Банк-посередник)<br>
-                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br> POLAND<br>
-                SWIFT: BPKOPLPW<br>
-                Beneficiary’s bank (Банк-одержувача)<br>
-                JSC KREDOBANK Lviv, Ukraine<br>
-                SWIFT:WUCBUA2X<br>
-                Beneficiary (Одержувач)<br>
-                Name<br>
-                CO "ICF "TOGETHER UA"<br>
-                Призначення платежу<br>
+                Intermediary (Банк-посередник)<br />
+                POWSZECHNA KASA OSZCZEDNOSCI BANK POLSKI SA, WARSZAWA,<br />
+                POLAND<br />
+                SWIFT: BPKOPLPW<br />
+                Beneficiary’s bank (Банк-одержувача)<br />
+                JSC KREDOBANK Lviv, Ukraine<br />
+                SWIFT:WUCBUA2X<br />
+                Beneficiary (Одержувач)<br />
+                Name<br />
+                CO "ICF "TOGETHER UA"<br />
+                Призначення платежу<br />
                 Charitable donation
               </p>
               <div class="transfer__item-coppy">
@@ -423,11 +498,11 @@
             </div>
           </li>
         </ul>
-
       </div>
     </div>
   </div>
 </section>
+
 
   <section id="for-partners" class="section for-partners section__bg-light">
   <div class="container">
@@ -601,9 +676,89 @@
 
   </div>
 </section>
-
+  
   <span class="line"></span>
+  
+  <section class="section order">
+  <div class="container">
+    <form class="order__form">
+      
+      <div class="order__top-head">
+        <div class="order__title">Замовити сувенір</div>
+        <button class="order__close-btn" type="reset">Повернутись</button>
+      </div>
 
+      <div class="order__top">
+  
+        <div class="order__item">
+          <img class="order__item-img" src="img/product.jpg" alt="зображення худі"/>
+          <div class="order__item-inner">
+            <div class="order__item-title">Худі "Максим Оса"</div>
+            <div class="order__item-prise">1500 грн</div>
+          </div>
+        </div>
+  
+        <div class="form__row">
+          <div class="form__field">
+            <label>Кількість</label>
+            <div class="quantity__block">
+              <button class="quantity__arrow quantity__arrow--plus" type="button"></button>
+              <input class="quantity__number number" type="number" min="1" max="100" step="1" value="1" required>
+              <button class="quantity__arrow quantity__arrow--minus" type="button"></button>
+            </div>
+          </div>
+    
+          <div class="form__field">
+            <label>Розмір</label>
+            <select class="js-choice" name="select" required>
+              <option value="" selected>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+              <option>XXXL</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="order__bottom">
+
+        <div class="form__row _two__columns">
+          <div class="form__field error">
+              <label>Прізвище та ім’я</label>
+              <input class="text" type="text" required>
+            </div>
+            <div class="form__field">
+              <label>Телефон</label>
+              <input class="text" type="text" required>
+            </div>
+        </div>
+
+        <div class="form__row _random__columns">
+            <div class="form__field">
+              <label>Місто, населений пункт</label>
+              <input class="text" type="text" required>
+            </div>
+          </form>
+          <div class="form__field">
+            <label>Відділення Нової Пошти</label>
+            <input class="text" type="text" required>
+          </div>
+        </div>
+
+        <div class="order__submit">
+          <p>
+            Після оформлення заявки, ми зв’яжемось з вами щоб уточнити деталі та відправити замовлення
+          </p>
+          <button class="btn order__btn" type="submit" required>Замовити</button>
+        </div>
+        
+      </div>
+
+    </form>
+  </div>
+</section>
 </main>
 
 <footer class="footer section__bg-dark">
@@ -659,14 +814,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.24/js/uikit.min.js"
-    integrity="sha512-hSlNacqEG9zgxcDD+YB6Ezc/1ldZ/Jn2m+Iy6wGmEHZJWLWnmiqq2dKoEfRePT8jr791mPGIrfpqqQ7bjhCDRg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
     integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
   <script src="js/index.js"></script>
   </body>
 
